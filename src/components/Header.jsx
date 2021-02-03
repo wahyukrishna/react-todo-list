@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import Button from "./Button";
+import Button from "./button/Button";
 
 const Header = ({ showAddToggle, showAdd, clearTodos }) => {
   return (

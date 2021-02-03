@@ -21,7 +21,7 @@ body {
   --main-black-color: #484848;
 }
 
-.main-red-color {
+/* .main-red-color {
   color: var(--main-red-color);
 }
 
@@ -35,7 +35,7 @@ body {
 
 .align-right {
   text-align: right;
-}
+} */
 
 body,
 html {
@@ -79,7 +79,7 @@ html {
   text-transform: lowercase;
 }
 
-.header-btn {
+/* .header-btn {
   width: 24%;
   font-size: 1.8rem;
   font-family: "Bungee", sans-serif;
@@ -98,7 +98,7 @@ html {
 
 .header-btn.main-black-color:active {
   text-shadow: 1px 1px 2px var(--main-black-color);
-}
+} */
 
 .add {
   padding: 16px;
