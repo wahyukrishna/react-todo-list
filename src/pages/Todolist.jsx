@@ -15,9 +15,13 @@ const Todolist = () => {
   const [showAdd, setShowAdd] = useState(false);
 
   const addTodo = (value) => {
-    const addedTodo = [...todos, { text: value, isCompleted: false }];
+    if (todos.length < 9) {
+      const addedTodo = [...todos, { text: value, isCompleted: false }];
 
-    setTodos(addedTodo);
+      setTodos(addedTodo);
+    } else {
+      alert("your maximum todos has reached");
+    }
   };
 
   const completeTodo = (index) => {
