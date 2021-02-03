@@ -31,8 +31,8 @@ body {
 
 body,
 html {
-  margin: 10px;
-  padding: 10px;
+  margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
@@ -110,7 +110,7 @@ html {
   outline: unset;
 
   font-family: "Homemade Apple", sans-serif;
-  font-size: 16px;
+  font-size: 24px;
   text-transform: lowercase;
 }
 
