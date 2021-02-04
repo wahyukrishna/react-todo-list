@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 
-import Paper from "../components/Paper";
-import Header from "../components/Header";
-import TodoForm from "../components/TodoForm";
-import Todos from "../components/Todos";
+import Paper from "../components/paper/Paper";
+import Header from "../components/header/Header";
+import TodoForm from "../components/todoform/TodoForm";
+import Todos from "../components/todos/Todos";
 
 const Todolist = () => {
   const [todos, setTodos] = useState([
-    { text: "Belajar React!", isCompleted: false },
-    { text: "Belajar props di React", isCompleted: false },
-    { text: "Belajar React Hooks", isCompleted: false }
+    // { text: "Test React!", isCompleted: false },
+    // { text: "Test props React", isCompleted: false },
+    // { text: "Test React Hooks", isCompleted: false }
   ]);
 
   const [showAdd, setShowAdd] = useState(false);
