@@ -1,9 +1,17 @@
 import React, { useState } from "react";
 import PropTypes, { arrayOf } from "prop-types";
+import cx from "classnames";
 // import React from "react";
+
+import styles from "./todoform.module.css";
 
 const TodoForm = ({ addTodo, showAdd }) => {
   const [value, setValue] = useState("");
+
+  const classNames = cx(styles.add);
+  const classNames1 = cx(styles.addForm);
+  const classNames2 = cx(styles.addInput);
+  const classNames3 = cx(styles.addBtn, styles.mainBlackColor);
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
@@ -25,15 +33,15 @@ const TodoForm = ({ addTodo, showAdd }) => {
 
   if (showAdd) {
     return (
-      <section className="add">
-        <form className="add-form" onSubmit={handleFormSubmit}>
+      <section className={classNames}>
+        <form className={classNames1} onSubmit={handleFormSubmit}>
           <input
             type="text"
-            className="add-input"
+            className={classNames2}
             value={value}
             onChange={(e) => setValue(e.target.value)}
           ></input>
-          <button className="add-btn main-black-color">Add</button>
+          <button className={classNames3}>Add</button>
         </form>
       </section>
     );
