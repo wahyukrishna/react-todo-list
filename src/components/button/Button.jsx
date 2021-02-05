@@ -5,6 +5,7 @@ import cx from "classnames";
 import styles from "./button.module.css";
 
 const Button = ({ text, onClick, color, align }) => {
+  // pemanggilan styles tanpa css in js
   // const classNames = [
   //   "header-btn",
   //   color === "black" && "main-black-color",

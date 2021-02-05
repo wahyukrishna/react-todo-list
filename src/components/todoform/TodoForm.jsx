@@ -20,8 +20,6 @@ const TodoForm = ({ addTodo, showAdd }) => {
       return;
     }
 
-    // styles.mainBlackColor
-
     addTodo(value);
     setValue("");
   };

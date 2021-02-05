@@ -7,9 +7,9 @@ import Todos from "../components/todos/Todos";
 
 const Todolist = () => {
   const [todos, setTodos] = useState([
-    // { text: "Test React!", isCompleted: false },
-    // { text: "Test props React", isCompleted: false },
-    // { text: "Test React Hooks", isCompleted: false }
+    { text: "Test React!", isCompleted: false },
+    { text: "Test props React", isCompleted: false },
+    { text: "Test React Hooks", isCompleted: false }
   ]);
 
   const [showAdd, setShowAdd] = useState(false);

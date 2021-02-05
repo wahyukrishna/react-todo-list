@@ -13,6 +13,7 @@ const Header = ({ showAddToggle, showAdd, clearTodos }) => {
         onClick={showAddToggle}
         align="left"
       />
+      {/* penggunaan classname dari styles.css */}
       {/* <button className="header-btn main-black-color" onClick={showAddToggle}>
         {showAdd ? "finish" : "Add"}
       </button> */}
