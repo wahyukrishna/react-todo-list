@@ -1,8 +1,13 @@
-import React from "react";
-import PropTypes from "prop-types";
-import cx from "classnames";
+/** @jsxImportSource @emotion/react */
 
-import styles from "./button.module.css";
+// import React from "react";
+import { jsx } from "@emotion/react";
+import PropTypes from "prop-types";
+// import cx from "classnames";
+
+import * as styles from "./button.styles";
+
+// import styles from "./button.module.css";
 
 const Button = ({ text, onClick, color, align }) => {
   // pemanggilan styles tanpa css in js
@@ -14,15 +19,18 @@ const Button = ({ text, onClick, color, align }) => {
   //   align === "right" && "align-right"
   // ].join(" ");
 
-  const classNames = cx(styles.headerBtn, {
-    [styles.mainBlackColor]: color === "black",
-    [styles.mainRedColor]: color === "red",
-    [styles.alignLeft]: align === "left",
-    [styles.alignRight]: align === "right"
-  });
+  // const classNames = cx(styles.headerBtn, {
+  //   [styles.mainBlackColor]: color === "black",
+  //   [styles.mainRedColor]: color === "red",
+  //   [styles.alignLeft]: align === "left",
+  //   [styles.alignRight]: align === "right"
+  // });
 
   return (
-    <button className={classNames} onClick={onClick}>
+    // <button className={classNames} onClick={onClick}>
+    //   {text}
+    // </button>
+    <button css={styles.button({ align, color })} onClick={onClick}>
       {text}
     </button>
   );
