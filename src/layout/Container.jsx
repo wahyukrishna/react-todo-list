@@ -4,7 +4,7 @@
 import { jsx, css } from "@emotion/react";
 import PropTypes from "prop-types";
 
-const container = ({
+const Container = ({
   children,
   flexDirection,
   flexWrap,
@@ -27,7 +27,7 @@ const container = ({
   );
 };
 
-container.defaultProps = {
+Container.defaultProps = {
   flexDirection: "row",
   flexWrap: "nowrap",
   justifyContent: "flex-start",
@@ -35,7 +35,7 @@ container.defaultProps = {
   alignContent: "stretch"
 };
 
-container.propTypes = {
+Container.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node
@@ -88,4 +88,4 @@ container.propTypes = {
   ])
 };
 
-export default container;
+export default Container;
