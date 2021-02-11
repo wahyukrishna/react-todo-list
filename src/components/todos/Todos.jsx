@@ -3,10 +3,10 @@
 // import { jsx } from "@emotion/react";
 // import { useTheme } from "@emotion/react";
 // import React from "react";
-import Todo from "../todo/Todo";
+import Todo from "../todo/TodoClass";
 import PropTypes from "prop-types";
 import Container from "../../layout/Container";
-import Item from "../../layout/Item";
+// import Item from "../../layout/Item";
 
 // import styles from "./todos.module.css";
 import * as styles from "./todos.styles";
