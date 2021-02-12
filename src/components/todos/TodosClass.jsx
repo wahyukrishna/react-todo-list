@@ -52,6 +52,7 @@ class Todos extends React.Component {
       </section>
     );
   }
+
   static propTypes = {
     todos: PropTypes.arrayOf(
       PropTypes.shape({
