@@ -23,7 +23,7 @@ class Todos extends React.Component {
   render() {
     const { todos, completeTodo } = this.props;
     return (
-      <section className="todo-component">
+      <section className="todos-component">
         <Container flexDirection="column" minHeight="500px">
           {todos.length > 0 &&
             todos.map((todo, index) => {
